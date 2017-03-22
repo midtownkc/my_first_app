@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'greeter/hello' => "greeter#hello"
   get 'greeter/goodbye'
 
+  root 'courses#index'
+
   ##You could have specified another name but the same action example:
   #get 'greeter/how_you_dude' => "greeter#hello"
   #get 'greeter/laterchester' => "greeter#goodbye"
