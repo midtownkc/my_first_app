@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  #since these are identical I'll use another syntax..
   get 'greeter/hello'
+  get 'greeter/goodbye'
+
+  ##You could have specified another name but the same action example:
+  #get 'greeter/how_you_dude' => "greeter#hello"
+  #get 'greeter/laterchester' => "greeter#goodbye"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
