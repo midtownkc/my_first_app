@@ -1,8 +1,9 @@
 class Coursera
   include HTTParty
+  #require 'pp'
 
   base_uri 'https://api.coursera.org/api/catalog.v1/courses'
-  default_params fields: "smallIcon, shortDescription", q: "search"
+  default_params fields: "smallIcon,shortDescription", q: "search"
   format :json
 
   def self.for term
@@ -10,3 +11,5 @@ class Coursera
   end
 
 end
+
+#pp Coursera.for "python"
