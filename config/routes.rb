@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'courses/index'
+
   #since these are identical I'll use another syntax..
-  get 'greeter/hello'
+  get 'greeter/hello' => "greeter#hello"
   get 'greeter/goodbye'
 
   ##You could have specified another name but the same action example:
