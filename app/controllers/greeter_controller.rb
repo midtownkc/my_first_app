@@ -8,5 +8,8 @@ class GreeterController < ApplicationController
     @times_displayed += 1
   end
   def goodbye
+    random_names = ["Alex", "Joe", "Michael"]
+    @name = random_names.sample
+    @time = Time.now
   end
 end
